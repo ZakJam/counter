@@ -1,0 +1,152 @@
+
+/*  RESET CSS */
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+/* Disable the text inflation algorithm and more  */
+html {
+  -webkit-text-size-adjust: none; /* for iOS Safari */
+  text-size-adjust: none; /* for other mobile browsers */
+  scroll-behavior: smooth;
+
+}
+
+
+
+/* Disable list-style */
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+    list-style: none;
+}
+
+menu,
+ol,
+ul {
+    padding-left: 0;
+}
+
+article ol,
+article ul {
+    list-style-position: inside;
+}
+
+
+
+/* Provide interactive elements with a cursor */
+label,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+    cursor: pointer;
+}
+
+
+
+/* CSS VARIABLES */
+
+
+:root {
+
+/* COLOR */
+
+
+/* primary color */
+    --first-color:  #575757 ;        
+    --second-color: #EAEAEA ;      
+    --third-color: white ;       
+    --fourth-color: black;
+
+
+/* neutral color */     
+    --fifth-color: ;      
+    --sixth-color: ;      
+
+      
+/* SPACING */
+
+    /* for margin , padding ecc... */
+
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+
+
+ /* TYPOGRAPHY */
+
+    /* for font-family */	
+
+    --font-main:  "Roboto",serif;
+    --font-secondary: ', serif';
+	
+   
+    /* for font-size */
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 20px;
+    --font-size-xl: 24px;
+    --font-size-xxl: 32px;
+
+
+    /* for font-weight */
+
+    --thin: 100;
+    --extra-light: 200;
+    --light: 300;
+    --normal: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+    --extra-bold: 800;
+    --heavy: 900;
+
+    
+    /* for border-radius */
+
+    --border-radius-sm: 3px;
+    --border-radius-md: 5px;
+    --border-radius-lg: 10px;
+
+    
+    /* for text-shadow */
+
+    --text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+
+
+ /* BORDER */
+
+    /* for box-shadow */
+
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+	
+
+/* TRANSITION */
+
+    /* for transition */
+
+    --transition-fast: 0.2s ease-in-out;
+    --transition-medium: 0.4s ease-in-out;
+    --transition-slow: 0.6s ease-in-out;
+
+
+
+};
+
