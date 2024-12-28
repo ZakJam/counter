@@ -5,7 +5,7 @@ Progetto sviluppato come parte del corso di JavaScript su [Start2Impact](https:/
 ## Screenshoot
 
 
-![Screenshot-counter](src\assets\image\zakjam.github.io_counter.app_.png)
+![Screenshot-counter](src/assets/image/zakjam.github.io_counter.app_.png)
 
 
 ## Funzionalità
