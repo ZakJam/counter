@@ -6,6 +6,7 @@ Progetto sviluppato come parte del corso di JavaScript su [Start2Impact](https:/
 
 
 ![Screenshot-counter](src/assets/image/zakjam.github.io_counter.app_.png)
+<img src="src/assets/image/zakjam.github.io_counter.app_.png" alt="Screenshot-counter" width="300" />
 
 
 ## Funzionalità
