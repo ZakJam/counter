@@ -46,6 +46,20 @@ const path5 = document.querySelector('#path5');
 const path6 = document.querySelector('#path6');
 const path7 = document.querySelector('#path7');
 
+
+// Seleziona tutti i pulsanti
+const buttonsZ = document.querySelectorAll('button');
+
+// Aggiungi un listener per il touchstart su ciascun pulsante
+buttonsZ.forEach(button => {
+    button.addEventListener('touchstart', function(event) {
+        // Impedisce l'azione di zoom durante il tocco sui pulsanti
+        event.preventDefault();
+    });
+});
+
+
+
 /* EVENTI DEI BOTTONI */
 
 /* Bottone Plus: Incrementa il numero */
