@@ -100,6 +100,11 @@ summary,
 }
 
 /*MOBILE VERSION*/
+:root {
+  touch-action: pan-x pan-y;
+  height: 100%;
+}
+
 body {
   min-height: 100vh;
   font-family: var(--font-main);
