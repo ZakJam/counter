@@ -1,5 +1,9 @@
 /*MOBILE VERSION*/
 
+:root {
+    touch-action: pan-x pan-y;
+    height: 100% 
+}
 
 body {
     min-height: 100vh;
