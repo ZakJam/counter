@@ -56,6 +56,19 @@ buttonsZ.forEach(button => {
         // Impedisce l'azione di zoom durante il tocco sui pulsanti
         event.preventDefault();
     });
+
+    if (button.target.classList.contains('minus')) {
+        displayNumber--;
+        number.innerHTML = displayNumber;
+    }
+    
+    if (button.target.classList.contains('plus')) {
+        displayNumber++;
+        number.innerHTML = displayNumber;
+    }
+    
+
+
 });
 
 
