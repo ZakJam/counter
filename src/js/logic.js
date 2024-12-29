@@ -46,7 +46,7 @@ const path5 = document.querySelector('#path5');
 const path6 = document.querySelector('#path6');
 const path7 = document.querySelector('#path7');
 
-
+/*
 // Seleziona tutti i pulsanti
 const buttonsZ = document.querySelectorAll('button');
 
@@ -71,7 +71,7 @@ buttonsZ.forEach(button => {
 
 });
 
-
+*/
 
 /* EVENTI DEI BOTTONI */
 
