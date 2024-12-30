@@ -148,6 +148,7 @@ body {
   width: 110px;
   overflow: hidden;
   height: auto;
+  padding: 3px;
 }
 .wrapper-buttons button {
   background-color: transparent;
