@@ -2,15 +2,23 @@
 
 /* Calcoliamo la dimensione del font in base all'altezza della pagina
    per renderlo responsive */
-   if (window.innerHeight > 450 && window.innerHeight <= 926) {
-    let differenza = window.innerHeight - 480;
-    let plusFS = differenza / 3.7;
-    number.style.fontSize = `${280 + plusFS}px`;
-    fontSizeAttuale = Number(`${280 + plusFS}`).toFixed();
-} else if (window.innerHeight > 926) {
-    number.style.fontSize = `400px`;
-    fontSizeAttuale = '400px';
+
+function setFontSizeMobile() {
+    if (window.innerHeight > 450 && window.innerHeight <= 926) {
+        let differenza = window.innerHeight - 480;
+        let plusFS = differenza / 3.7;
+        number.style.fontSize = `${280 + plusFS}px`;
+        fontSizeAttuale = Number(`${280 + plusFS}`).toFixed();
+    } else if (window.innerHeight > 926) {
+        number.style.fontSize = `400px`;
+        fontSizeAttuale = '400px';
+    }
 }
+
+setFontSizeMobile();
+
+window.addEventListener('resize', setFontSizeMobile);
+
 
 /* Questa funzione modifica il font-size del numero in base alla sua grandezza,
    sia per numeri positivi che negativi */
@@ -77,19 +85,6 @@ plus.addEventListener('click', adjustFS);
 // Event listener per il pulsante "minus"
 minus.addEventListener('click', adjustFS);
 
-/* Modifica il font-size al ridimensionamento della finestra */
-window.addEventListener('resize', function () {
-    if (window.innerHeight > 450 && window.innerHeight <= 926) {
-        let differenza = window.innerHeight - 480;
-        let plusFS = differenza / 3.7;
-        const stile = window.getComputedStyle(number);
-        const attualeFS = stile.fontSize;
-        number.style.fontSize = `${280 + plusFS}px`;
-        fontSizeAttuale = Number(`${280 + plusFS}`).toFixed();
-    } else if (window.innerHeight > 926) {
-        number.style.fontSize = `400px`;
-    }
-});
 
 // Chiama `adjustFS` al ridimensionamento
 window.addEventListener('resize', adjustFS);
