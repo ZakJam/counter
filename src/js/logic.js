@@ -47,6 +47,12 @@ const path6 = document.querySelector('#path6');
 const path7 = document.querySelector('#path7');
 
 
+const iconSun = document.getElementById('iconSun'); // Icona Sole
+const iconMoon = document.getElementById('color'); // Icona Luna
+
+
+
+
 /* EVENTI DEI BOTTONI */
 
 /* Bottone Plus: Incrementa il numero */
@@ -138,7 +144,8 @@ btnDarkLightMode.addEventListener('click', function (e) {
         } )
         
         
-        
+        iconMoon.style.display = 'none';
+        iconSun.style.display = 'inline-block';        
         
         number.style.color = 'white';
 
@@ -183,6 +190,8 @@ btnDarkLightMode.addEventListener('click', function (e) {
         } )
         
 
+        iconSun.style.display = 'none';
+        iconMoon.style.display = 'inline-block';
 
         number.style.color = 'black';
 
