@@ -541,10 +541,13 @@ body {
     height: 100px;
     border-radius: 50%;
     background-color: transparent;
-    border: 1px black solid;
+    border: 1px solid rgba(0, 0, 0, 0.6);
   }
   .wrapper-minus-plus .minus svg {
     width: 56px;
+  }
+  .wrapper-minus-plus .minus:hover {
+    border: 1px solid black;
   }
   .wrapper-minus-plus .plus {
     display: flex;
@@ -554,11 +557,14 @@ body {
     height: 100px;
     border-radius: 50%;
     background-color: transparent;
-    border: 1px black solid;
+    border: 1px solid rgba(0, 0, 0, 0.6);
   }
   .wrapper-minus-plus .plus svg {
     width: 50px;
     height: 50px;
+  }
+  .wrapper-minus-plus .plus:hover {
+    border: 1px solid black;
   }
   /* RESET DOMANDA*/
   .popup-reset {
@@ -723,7 +729,6 @@ body {
     height: 100px;
     border-radius: 50%;
     background-color: transparent;
-    border: 1px black solid;
   }
   .wrapper-minus-plus .minus svg {
     width: 56px;
@@ -736,7 +741,6 @@ body {
     height: 100px;
     border-radius: 50%;
     background-color: transparent;
-    border: 1px black solid;
   }
   .wrapper-minus-plus .plus svg {
     width: 50px;

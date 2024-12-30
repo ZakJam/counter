@@ -114,12 +114,32 @@ btnDarkLightMode.addEventListener('click', function (e) {
         svgElement2.style.fill = 'white';
         svgElement3.style.fill = 'white';
 
-        minus.style.border = '1px solid white';
+        minus.style.border = '1px solid rgba(255, 255, 255, 0.6)';
         svgMinus.style.fill = 'white';
 
-        plus.style.border = '1px solid white';
+        plus.style.border = '1px solid rgba(255, 255, 255, 0.6)';
         svgPlus.style.fill = 'white';
 
+
+        plus.addEventListener('mouseover', ()=> {
+            plus.style.border = '1px solid rgba(255, 255, 255 ,1)';
+        } )
+
+        plus.addEventListener('mouseleave', ()=> {
+            plus.style.border = '1px solid rgba(255, 255, 255,0.6)';
+        } )
+        
+        minus.addEventListener('mouseover', ()=> {
+            minus.style.border = '1px solid rgba(255, 255, 255,1)';
+        } )
+
+        minus.addEventListener('mouseleave', ()=> {
+            minus.style.border = '1px solid rgba(255, 255, 255,0.6)';
+        } )
+        
+        
+        
+        
         number.style.color = 'white';
 
         // Cambia colori logo
@@ -129,7 +149,9 @@ btnDarkLightMode.addEventListener('click', function (e) {
         });
 
         console.log('Modalità Light attivata');
-    } else if (e.currentTarget.classList.contains('light-mode')) {
+
+    } 
+        else if (e.currentTarget.classList.contains('light-mode')) {
         // Passa a modalità Dark
         e.currentTarget.classList.remove('light-mode');
         e.currentTarget.classList.add('dark-mode');
@@ -141,8 +163,27 @@ btnDarkLightMode.addEventListener('click', function (e) {
         svgPlus.style.fill = 'black';
         svgMinus.style.fill = 'black';
 
-        plus.style.border = '1px solid black';
-        minus.style.border = '1px solid black';
+        plus.style.border = '1px solid rgba(0, 0, 0, 0.6)';
+        minus.style.border = '1px solid rgba(0, 0, 0, 0.6)';
+
+        plus.addEventListener('mouseover', ()=> {
+            plus.style.border = '1px solid rgba(0, 0, 0 ,1)';
+        } )
+
+        plus.addEventListener('mouseleave', ()=> {
+            plus.style.border = '1px solid rgba(0, 0, 0 ,0.6)';
+        } )
+        
+        minus.addEventListener('mouseover', ()=> {
+            minus.style.border = '1px solid rgba(0, 0, 0 ,1)';
+        } )
+
+        minus.addEventListener('mouseleave', ()=> {
+            minus.style.border = '1px solid rgba(0, 0, 0 ,0.6)';
+        } )
+        
+
+
         number.style.color = 'black';
 
         // Cambia colori logo
