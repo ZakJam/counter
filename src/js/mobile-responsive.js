@@ -98,10 +98,10 @@ function updateLogoSize() {
 
         logo.style.width = `${150 + plusWidth}px`;
         logo.style.height = `${37 + plusHeight}px`;
-    } else if (window.innerWidth > 428) {
+    } else if (window.innerWidth > 428 && window.innerWidth < 768) {
         logo.style.width = '197px';
         logo.style.height = '55px';
-    } else {
+    } else if (window.innerWidth < 320) {
         logo.style.width = '150px';
         logo.style.height = '37px';
     }
@@ -125,7 +125,7 @@ function updateButtonStyles() {
             btn.style.width = `${25 + plusBS}px`;
             btn.style.height = `${25 + plusBS}px`;
         });
-    } else if (window.innerWidth > 428) {
+    } else if (window.innerWidth > 428 && window.innerWidth < 768) {
         buttons.style.width = '158px';
         button.forEach((btn) => {
             btn.style.width = '40px';
@@ -153,14 +153,14 @@ function updateMinPlusSize() {
             btn.style.width = `${60 + plusMP}px`;
             btn.style.height = `${60 + plusMP}px`;
         });
-    } else if (window.innerWidth > 428) {
+    } else if (window.innerWidth > 428 && window.innerWidth < 768) {
         minplus.style.width = '271px';
         minplus.style.height = '100px';
         btnMP.forEach((btn) => {
             btn.style.width = '100px';
             btn.style.height = '100px';
         });
-    } else {
+    } else if (window.innerWidth < 320) {
         minplus.style.width = '188px';
         minplus.style.height = '60px';
     }

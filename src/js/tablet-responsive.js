@@ -115,9 +115,17 @@ function updateLogoSizeTablet() {
 
         logo.style.width = `${287 + plusWidth}px`;
         logo.style.height = `${78 + plusHeight}px`;
-    } else if (window.innerWidth > 768) {
+
+    } else if (window.innerWidth > 768 && window.innerWidth < 1024 ) {
+        
         logo.style.width = '376px';
         logo.style.height = '98px';
+
+    } else {
+      
+        logo.style.width = '';
+        logo.style.height = '';
+
     } 
 }
 
@@ -153,13 +161,21 @@ function updateButtonStylesTablet() {
             btn.style.width = `${60 + plusBS}px`;
             btn.style.height = `${60 + plusBS}px`;
         });
-    } else if (window.innerWidth > 768) {
+    } else if (window.innerWidth > 768 && window.innerWidth < 1024 ) {
 
         buttons.style.width = '323px';
         button.forEach((btn) => {
             btn.style.width = '70px';
             btn.style.height = '70px';
         });
+    } else {
+
+        buttons.style.width = '';
+        button.forEach((btn) => {
+            btn.style.width = '';
+            btn.style.height = '';
+        });        
+
     }
 }
 
@@ -188,13 +204,22 @@ function updateMinPlusSizeTablet() {
             btn.style.width = `${130 + plusMP}px`;
             btn.style.height = `${130 + plusMP}px`;
         });
-    } else if (window.innerWidth > 768) {
+    } else if (window.innerWidth > 768 && window.innerWidth < 1024 ) {
         minplus.style.width = '447px';
         minplus.style.height = '170px';
         btnMP.forEach((btn) => {
             btn.style.width = '170px';
             btn.style.height = '170px';
         });
+    } else {
+
+        minplus.style.width = '';
+        minplus.style.height = '';
+        btnMP.forEach((btn) => {
+            btn.style.width = '';
+            btn.style.height = '';
+        });
+
     }
 }
 

@@ -1,11 +1,14 @@
 /*MOBILE VERSION*/
 
 :root {
+
     touch-action: pan-x pan-y;
     height: 100% 
+
 }
 
 body {
+
     min-height: 100vh;
     font-family: var(--font-main);
     font-weight: var(--light);
@@ -26,7 +29,8 @@ body {
     width: 150px;
     height: 37px;
 
-    svg{
+    svg {
+        
         width: 100%;
         height: 100%;
 
@@ -37,15 +41,15 @@ body {
         path#path6,
         path#path7,
         path#path1 {
+        
             fill: white;
             opacity:0.98;
             stroke:var( --fourth-color);
             stroke-width:1;
             stroke-opacity:1;
+        
         }
-    
     }
-
 }
 
 
@@ -62,25 +66,25 @@ body {
     height: auto;
 
 
-    button{
+    button {
+        
         background-color: transparent;
         width: 25px;
         height: 25px;
 
-    svg{ 
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-
-
+    svg { 
+        
+        width: 100%;
+        height: 100%;
+    
+    }  
+  }
 }
 
 
 /* NUMBER */
 
-.wrapper-number{
+.wrapper-number {
 
     display: flex;
     flex-direction: row;
@@ -90,13 +94,12 @@ body {
     width: 80%;
     overflow: hidden;
 
-    .number{
+    .number {
+
         text-align: center;
         font-size: 280px;
-        
     
     }
-
 }
 
 
@@ -104,13 +107,15 @@ body {
 /*MINUS-PLUS BUTTONS*/
 
 
-.wrapper-minus-plus{
+.wrapper-minus-plus {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 188px;
 
-    .minus{
+    .minus {
+        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -120,14 +125,16 @@ body {
         background-color: transparent;
         border: 1px black solid;
 
-        svg{
+        svg {
+            
             width: 38px;
-        }
         
+        }    
     }
 
 
-    .plus{
+    .plus {
+        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -137,9 +144,11 @@ body {
         background-color: transparent;
         border: 1px black solid;
 
-        svg{
+        svg {
+            
             width: 45px;
             height: 45px;
+
         }
     }
 }
@@ -150,7 +159,8 @@ body {
 /* RESET DOMANDA*/
 
 
-.popup-reset{
+.popup-reset {
+    
     display: none;
     position: fixed;
     top: 0;
@@ -162,7 +172,7 @@ body {
 
 }
 
-.reset-question{
+.reset-question {
 
     position: fixed;
     top: 50%;
@@ -180,23 +190,26 @@ body {
     border-radius: 10px;
 
 
-    .btn-si{
+    .btn-si {
+        
         font-size: 20px;
         background-color: transparent;
+    
     }
 
-    .btn-no{
+    .btn-no {
+        
         font-size: 20px;
         background-color: transparent;
+    
     }
-
-
 }
 
 
 
 
-.popup-info{
+.popup-info {
+
     display: none;
     position: fixed;
     top: 0;
@@ -207,7 +220,8 @@ body {
     z-index: 1000;
 
 
-    .info-popup{
+    .info-popup {
+
     position: fixed;
     top: 50%;
     left: 50%;
@@ -224,12 +238,14 @@ body {
     border-radius: 10px;
 
     }
+
+    #x-btn {
+
+        width: 20px;
+        cursor: pointer;
+    
+    }
 }
 
-#x-btn{
-
-    width: 20px;
-
-}
 
 
