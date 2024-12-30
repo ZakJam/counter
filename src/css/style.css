@@ -499,7 +499,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 180px;
+    width: 160px;
     overflow: hidden;
     height: auto;
   }
@@ -531,7 +531,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 380px;
+    width: 320px;
   }
   .wrapper-minus-plus .minus {
     display: flex;
