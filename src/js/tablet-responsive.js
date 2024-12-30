@@ -121,7 +121,7 @@ function updateLogoSizeTablet() {
         logo.style.width = '376px';
         logo.style.height = '98px';
 
-    } else {
+    } else if (window.innerWidth > 1024 )  {
       
         logo.style.width = '';
         logo.style.height = '';
@@ -168,7 +168,7 @@ function updateButtonStylesTablet() {
             btn.style.width = '70px';
             btn.style.height = '70px';
         });
-    } else {
+    } else if (window.innerWidth > 1024 ) {
 
         buttons.style.width = '';
         button.forEach((btn) => {
@@ -211,7 +211,7 @@ function updateMinPlusSizeTablet() {
             btn.style.width = '170px';
             btn.style.height = '170px';
         });
-    } else {
+    } else if (window.innerWidth > 1024 ) {
 
         minplus.style.width = '';
         minplus.style.height = '';
