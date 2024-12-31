@@ -321,3 +321,14 @@ document.addEventListener('keydown', (e) => {
     }
 
 });
+
+
+window.addEventListener("orientationchange", function () {
+    if (window.orientation !== 0) {
+        document.body.style.display = "none"; // Nasconde il contenuto
+        alert("Per favore, ruota il dispositivo in modalità verticale.");
+    } else {
+        document.body.style.display = "block"; // Mostra il contenuto
+    }
+});
+
