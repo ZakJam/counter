@@ -5,14 +5,17 @@
 *,
 *::before,
 *::after {
+
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     border: none;
+
 }
 
 /* Disable the text inflation algorithm and more  */
 html {
+
   -webkit-text-size-adjust: none; /* for iOS Safari */
   text-size-adjust: none; /* for other mobile browsers */
   scroll-behavior: smooth;
@@ -25,18 +28,24 @@ html {
 menu:not(article menu),
 ol:not(article ol),
 ul:not(article ul) {
+
     list-style: none;
+
 }
 
 menu,
 ol,
 ul {
+
     padding-left: 0;
+
 }
 
 article ol,
 article ul {
+
     list-style-position: inside;
+
 }
 
 
@@ -49,7 +58,9 @@ summary,
 [type=radio],
 [type=submit],
 [type=checkbox] {
+
     cursor: pointer;
+
 }
 
 

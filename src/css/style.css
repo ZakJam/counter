@@ -117,6 +117,13 @@ body {
   background-color: var(--second-color);
 }
 
+.link-github:focus,
+.close-btn:focus,
+button:focus {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+
 /* LOGO */
 .wrapper-logo {
   width: 150px;
