@@ -204,7 +204,7 @@ button:focus {
   height: 60px;
   border-radius: 50%;
   background-color: transparent;
-  border: 1px black solid;
+  border: 1px var(--fourth-color) solid;
 }
 .wrapper-minus-plus .minus svg {
   width: 38px;
@@ -217,7 +217,7 @@ button:focus {
   height: 60px;
   border-radius: 50%;
   background-color: transparent;
-  border: 1px black solid;
+  border: 1px var(--fourth-color) solid;
 }
 .wrapper-minus-plus .plus svg {
   width: 45px;
@@ -321,7 +321,7 @@ button:focus {
   .wrapper-logo svg path#path6,
   .wrapper-logo svg path#path7,
   .wrapper-logo svg path#path1 {
-    fill: white;
+    fill: var(--third-color);
     opacity: 0.98;
     stroke: var(--fourth-color);
     stroke-width: 1;
@@ -374,7 +374,7 @@ button:focus {
     height: 130px;
     border-radius: 50%;
     background-color: transparent;
-    border: 1px black solid;
+    border: 1px var(--fourth-color) solid;
   }
   .wrapper-minus-plus .minus svg {
     width: 38px;
@@ -387,7 +387,7 @@ button:focus {
     height: 130px;
     border-radius: 50%;
     background-color: transparent;
-    border: 1px black solid;
+    border: 1px var(--fourth-color) solid;
   }
   .wrapper-minus-plus .plus svg {
     width: 45px;
@@ -503,7 +503,7 @@ button:focus {
   .wrapper-logo svg path#path6,
   .wrapper-logo svg path#path7,
   .wrapper-logo svg path#path1 {
-    fill: white;
+    fill: var(--third-color);
     opacity: 0.98;
     stroke: var(--fourth-color);
     stroke-width: 1;
@@ -566,7 +566,7 @@ button:focus {
     width: 56px;
   }
   .wrapper-minus-plus .minus:hover {
-    border: 1px solid black;
+    border: 1px solid var(--fourth-color);
   }
   .wrapper-minus-plus .plus {
     display: flex;
@@ -583,7 +583,7 @@ button:focus {
     height: 50px;
   }
   .wrapper-minus-plus .plus:hover {
-    border: 1px solid black;
+    border: 1px solid var(--fourth-color);
   }
   /* RESET DOMANDA*/
   .popup-reset {
@@ -695,7 +695,7 @@ button:focus {
   .wrapper-logo svg path#path6,
   .wrapper-logo svg path#path7,
   .wrapper-logo svg path#path1 {
-    fill: white;
+    fill: var(--third-color);
     opacity: 0.98;
     stroke: var(--fourth-color);
     stroke-width: 1;

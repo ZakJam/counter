@@ -15,8 +15,8 @@ function setFontSizeTablet() {
     }
 }
 
+//Chiama la funzione in partenza e al ridimensionamento della pagina
 setFontSizeTablet();
-
 window.addEventListener('resize', setFontSizeTablet);
 
 
@@ -93,7 +93,6 @@ window.addEventListener('resize', adjustFSTablet);
 
 
 
-//setInterval(() => minus.click(), 10);
 
 
 
@@ -105,8 +104,7 @@ window.addEventListener('resize', adjustFSTablet);
 
 
 
-
-// LOGO RESPONSIVE
+// funzione per rendere il logo responsive per la versione tablet
 function updateLogoSizeTablet() {
     if (window.innerWidth >= 585 && window.innerWidth  <= 768) {
         let differenza = window.innerWidth - 585;
@@ -147,7 +145,7 @@ window.addEventListener('resize', updateLogoSizeTablet);
 
 
 
-// BUTTONS RESPONSIVE
+// funzione per rendere i bottoni responsivi per la versione tablet
 function updateButtonStylesTablet() {
 
     if (window.innerWidth >= 585 && window.innerWidth <= 768) {
@@ -189,7 +187,7 @@ window.addEventListener('resize', updateButtonStylesTablet);
 
 
 
-// BUTTONS MINUS AND PLUS
+// funzioni per rendere i bottoni per l'incremento e il decremento responsive per la versione tablet
 function updateMinPlusSizeTablet() {
     if (window.innerWidth >= 585 && window.innerWidth <= 768) {
         let differenza = window.innerWidth - 585;

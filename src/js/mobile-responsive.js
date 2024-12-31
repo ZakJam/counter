@@ -20,6 +20,7 @@ function setFontSizeMobile() {
     }
 }
 
+//Chiama la funzione in partenza e al ridimensionamento della pagina
 setFontSizeMobile();
 window.addEventListener('resize', setFontSizeMobile);
 
@@ -145,7 +146,7 @@ minus.addEventListener('click', adjustFS);
 // Chiama `adjustFS` al ridimensionamento
 window.addEventListener('resize', adjustFS);
 
-// LOGO RESPONSIVE
+// funzione per rendere il logo responsive 
 function updateLogoSize() {
     if (window.innerWidth > 320 && window.innerWidth < 428) {
         let differenza2 = window.innerWidth - 320;
@@ -169,7 +170,7 @@ function updateLogoSize() {
 updateLogoSize();
 window.addEventListener('resize', updateLogoSize);
 
-// BUTTONS RESPONSIVE
+// funzione per rendere i bottoni responsivi
 function updateButtonStyles() {
 
     if (window.innerWidth > 320 && window.innerWidth < 428) {
@@ -207,7 +208,7 @@ window.addEventListener('resize', updateButtonStyles);
 
 
 
-// BUTTONS MINUS AND PLUS
+// funzioni per rendere i bottoni per l'incremento e il decremento responsive
 
 function updateMinPlusSize() {
 

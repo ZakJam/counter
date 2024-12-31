@@ -39,7 +39,7 @@
             path#path7,
             path#path1 {
                 
-                fill: white;
+                fill: var(--third-color);
                 opacity:0.98;
                 stroke:var( --fourth-color);
                 stroke-width:1;
@@ -142,7 +142,7 @@
 
         .minus:hover{
 
-            border: 1px solid black;
+            border: 1px solid var( --fourth-color);;
 
         }
     
@@ -169,7 +169,7 @@
 
         .plus:hover{
 
-            border: 1px solid black;
+            border: 1px solid var( --fourth-color);;
 
         }
     }

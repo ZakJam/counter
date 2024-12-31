@@ -37,7 +37,7 @@ const btnMP = document.querySelectorAll('.click-button');
 let displayNumber = 0;
 let fontSizeAttuale;
 
-/* ELEMENTI DEL LOGO */
+// Elementi del logo 
 const path1 = document.querySelector('#path1');
 const path2 = document.querySelector('#path2');
 const path3 = document.querySelector('#path3');
@@ -47,8 +47,9 @@ const path6 = document.querySelector('#path6');
 const path7 = document.querySelector('#path7');
 
 
-const iconSun = document.getElementById('iconSun'); // Icona Sole
-const iconMoon = document.getElementById('color'); // Icona Luna
+// Icona sole e luna
+const iconSun = document.getElementById('iconSun'); 
+const iconMoon = document.getElementById('color'); 
 
 const linkGH = document.querySelector('.link-github');
 
@@ -57,28 +58,38 @@ const linkGH = document.querySelector('.link-github');
 /* EVENTI DEI BOTTONI */
 
 /* Bottone Plus: Incrementa il numero */
-plus.addEventListener('click', function() {
+
+function incrementa() {
 
     displayNumber++;
     number.innerHTML = displayNumber;
 
-});
+};
+
+plus.addEventListener('click', incrementa);
+
 
 /* Bottone Minus: Decrementa il numero */
-minus.addEventListener('click', function() {
 
+function decrementa() {
+    
     displayNumber--;
     number.innerHTML = displayNumber;
 
-});
+};
+
+minus.addEventListener('click', decrementa);
 
 /* Bottone Reset: Mostra il popup di conferma */
-btnreset.addEventListener('click', function() {
+
+function reset() {
 
     popupreset.style.display = 'block';
     btnSiReset.focus();
 
-});
+}
+
+btnreset.addEventListener('click', reset);
 
 /* Conferma Reset: Reimposta il numero a 0 e il font-size */
 btnSiReset.addEventListener('click', function () {
@@ -105,6 +116,7 @@ btnSiReset.addEventListener('click', function () {
 
 });
 
+/* Questo codice fa si che il focus non esca dalla popup finchè non ho selezionato un bottone, mantenendo cosi il focus presente*/
 popupreset.addEventListener('keydown', function (e) {
     const focusableElements = popupreset.querySelectorAll('button'); // Elementi focusable nel popup
     const firstFocusableElement = focusableElements[0];
@@ -127,7 +139,6 @@ popupreset.addEventListener('keydown', function (e) {
 
 
 
-
 /* Annulla Reset: Nasconde il popup */
 btnNoReset.addEventListener('click', function () {
 
@@ -143,6 +154,7 @@ btninfo.addEventListener('click', function () {
 
 });
 
+/* Questo codice fa si che il focus non esca dalla popup finchè non ho selezionato un bottone, mantenendo cosi il focus presente*/
 popinfo.addEventListener('keydown', function (e) {
     // Seleziona tutti gli elementi focusable all'interno del popup
     const focusableElements = popinfo.querySelectorAll('[tabindex="0"], a, button, [role="button"]');
@@ -164,6 +176,7 @@ popinfo.addEventListener('keydown', function (e) {
     }
 });
 
+/* Questo codice è affinchè riesca a cliccare il div con tab, il div non essendo di default selezionabile richiede del codice */ 
 btnCloseInfo.addEventListener('keydown', function (e) {
     if (e.key === 'Enter' || e.key === ' ') { // ' ' è per Space
         e.preventDefault(); // Previeni lo scrolling della pagina per Space
@@ -193,18 +206,20 @@ btnDarkLightMode.addEventListener('click', function (e) {
         e.currentTarget.classList.remove('dark-mode');
         e.currentTarget.classList.add('light-mode');
 
+        //cambia il colore del background e delle icone info,mode-dark-light e reset
         document.body.style.backgroundColor = '#575757';
         svgElement.style.fill = 'white';
         svgElement2.style.fill = 'white';
         svgElement3.style.fill = 'white';
 
+        // il colore del bordo e il riempimento dei pulsanti
         minus.style.border = '1px solid rgba(255, 255, 255, 0.6)';
         svgMinus.style.fill = 'white';
 
         plus.style.border = '1px solid rgba(255, 255, 255, 0.6)';
         svgPlus.style.fill = 'white';
 
-
+        // crea l'effetto hover sul pulsante minus e plus
         plus.addEventListener('mouseover', ()=> {
 
             plus.style.border = '1px solid rgba(255, 255, 255 ,1)';
@@ -229,10 +244,11 @@ btnDarkLightMode.addEventListener('click', function (e) {
         
         } )
         
-        
+        // cambia l'icona
         iconMoon.style.display = 'none';
         iconSun.style.display = 'inline-block';        
         
+        //cambia il colore del numero
         number.style.color = 'white';
 
         // Cambia colori logo
@@ -243,7 +259,7 @@ btnDarkLightMode.addEventListener('click', function (e) {
         
         });
 
-        console.log('Modalità Light attivata');
+    
 
     } 
         else if (e.currentTarget.classList.contains('light-mode')) {
@@ -252,16 +268,19 @@ btnDarkLightMode.addEventListener('click', function (e) {
         e.currentTarget.classList.remove('light-mode');
         e.currentTarget.classList.add('dark-mode');
 
+        //cambia il colore del background e delle icone info,mode-dark-light e reset
         document.body.style.backgroundColor = '#EAEAEA';
         svgElement.style.fill = 'black';
         svgElement2.style.fill = 'black';
         svgElement3.style.fill = 'black';
+        
+        // il colore del bordo e il riempimento dei pulsanti
+        plus.style.border = '1px solid rgba(0, 0, 0, 0.6)';
+        minus.style.border = '1px solid rgba(0, 0, 0, 0.6)';
         svgPlus.style.fill = 'black';
         svgMinus.style.fill = 'black';
 
-        plus.style.border = '1px solid rgba(0, 0, 0, 0.6)';
-        minus.style.border = '1px solid rgba(0, 0, 0, 0.6)';
-
+        // crea l'effetto hover sul pulsante minus e plus
         plus.addEventListener('mouseover', ()=> {
         
             plus.style.border = '1px solid rgba(0, 0, 0 ,1)';
@@ -287,9 +306,11 @@ btnDarkLightMode.addEventListener('click', function (e) {
         } )
         
 
+        // cambia l'icona
         iconSun.style.display = 'none';
         iconMoon.style.display = 'inline-block';
-
+       
+        //cambia il colore del numero
         number.style.color = 'black';
 
         // Cambia colori logo
@@ -300,16 +321,15 @@ btnDarkLightMode.addEventListener('click', function (e) {
         
         });
 
-        console.log('Modalità Dark attivata');
     }
 });
 
-
+// Permette di svolgere le principali azioni cliccando da tastiera, aumentare , diminuire e azzerare 
 document.addEventListener('keydown', (e) => {
 
     if (e.key === 'ArrowUp') {
         
-      plus.click() ;
+      plus.click();
     
     } else if (e.key === 'ArrowDown') {
     
@@ -322,7 +342,7 @@ document.addEventListener('keydown', (e) => {
 
 });
 
-
+//Evita che la pagina venga capovolta
 window.addEventListener("orientationchange", function () {
     if (window.orientation !== 0) {
         document.body.style.display = "none"; // Nasconde il contenuto
